@@ -25,6 +25,7 @@ function getNextDate() {
 }
 
 const nextLesson = getMaxLesson() + 1;
+const nextLessonPadded = nextLesson.toString().padStart(2, '0');
 const nextDate = getNextDate();
 const template =
 `<!-- .slide: id="lesson${nextLesson}" -->
@@ -35,7 +36,7 @@ Lesson ${nextLesson}, ${nextDate.getDay() == 2 ? "Tuesday" : "Thursday"}, ${next
 
 ---
 `;
-fs.writeFileSync(`lesson${nextLesson}.md`, template);
+fs.writeFileSync(`lesson${nextLessonPadded}.md`, template);
 
 function patchTableOfContents() {
     let toc = fs.readFileSync("toc.md", { encoding: 'utf8' });
@@ -48,7 +49,7 @@ function patchIndexHtml() {
     let index = fs.readFileSync("index.html", { encoding: "utf-8" });
     index = index.replace(
         /^(.*NEW_SECTION_HERE.*)$/mg,
-        `          <section data-markdown="lesson${nextLesson}.md" data-charset="utf-8"></section>\n$1`
+        `          <section data-markdown="lesson${nextLessonPadded}.md" data-charset="utf-8"></section>\n$1`
     );
     fs.writeFileSync("index.html", index);
 }
