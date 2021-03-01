@@ -257,6 +257,7 @@ The way I use it:
 * [udemy.com](https://www.udemy.com): Introduction to JS (course)
 * [codeacademy.com](https://www.codecademy.com): Introduction to JS (another course)
 * [edabit.com](https://edabit.com): Learn JavaScript with interactive challenges and external resources
+* [learnjavascript.online](https://learnjavascript.online): very good online course, but costs 40€
 
 ---
 
@@ -384,7 +385,8 @@ Can they afford buying popcorn too?
 Open the console, and type in the following strings:
 
 * Your full name
-* The name of your neighbor on the right
+* Your favourite food 
+* Name of your favourite book / tv series / anime 
 
 ---
 
@@ -395,7 +397,6 @@ Strings start and end with  (`'`) or (`"`). But what if we want to add a quote w
 ```js
 "He said: "Hello""
 ```
-
 
 We can escape the quote with a backslash (`\`):
 
@@ -473,7 +474,7 @@ The addition operator can be used on Strings and Numbers:
 ```
 
 Make sure to always choose the correct data type for your data,
-because the operators in JavaScript behave differently depending on the data type.
+since the operators in JavaScript behave differently depending on the data type.
 
 ---
 
@@ -495,7 +496,7 @@ Open the console, and type in the following:
 
 Yep, that is it.
 
-It seems not very useful...
+Why would we dedicate an entire data type for just two values?
 
 YOU JUST WAIT!
 <!-- .element: class="fragment" -->
@@ -520,8 +521,9 @@ All of these return a boolean!
 
 ### Let's practice
 
-* Are you older than the person next to your right?
-* Do you have the same first name as the person next to you?
+Use JavaScript to check if:
+* you are older than me (I'm 39)
+* your first name is the same as mine 
 
 ---
 
@@ -592,9 +594,10 @@ false
 
 ### Summary: Basic Data types 
 
-- numbers
-- strings 
-- booleans 
+- number
+- string 
+- boolean
+- undefined 
 
 ---
 
