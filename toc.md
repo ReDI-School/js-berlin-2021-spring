@@ -1,6 +1,6 @@
 ### Table Of Contents
 
-1. [Introduction](#lesson1): Basic Data Types and Operators
+1. [Introduction](#basic-data-types): Basic Data Types and Operators
 
 Direct link to lessons: [1](#lesson1)
 
