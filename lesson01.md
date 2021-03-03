@@ -8,7 +8,7 @@ Lesson 1, Tuesday, 2021-03-02
 
 ### Lesson overview
 
-- Course overview 
+- Course overview
 - introduction to JavaScript
 - basic JavaScript data types
 - basic JavaScript operators
@@ -28,7 +28,7 @@ Lesson 1, Tuesday, 2021-03-02
 
 ---
 
-### Course overview 
+### Course overview
 #### JS teachers, in alphabetical order
 
 - Abdullah
@@ -43,8 +43,8 @@ Lesson 1, Tuesday, 2021-03-02
 
 ---
 
-### Course overview 
-#### Lesson structure 
+### Course overview
+#### Lesson structure
 
 - 2 hour lessons, with a 10 minute break
 - a new topic (mostly) every week
@@ -52,7 +52,7 @@ Lesson 1, Tuesday, 2021-03-02
 
 ---
 
-### Course overview 
+### Course overview
 #### Slides
 
 - we'll create slides (like the one you are seeing now) for each lesson
@@ -61,8 +61,8 @@ Lesson 1, Tuesday, 2021-03-02
 
 ---
 
-### Course overview 
-#### Theory / Exercises / homework 
+### Course overview
+#### Theory / Exercises / homework
 
 - homeworks (exercises you're supposed to do at home) are given on Thursday
 <!-- .element: class="fragment" -->
@@ -70,15 +70,15 @@ Lesson 1, Tuesday, 2021-03-02
 <!-- .element: class="fragment" -->
 - no grades, no evaluations
 <!-- .element: class="fragment" -->
-- we can provide useful feedback 
+- we can provide useful feedback
 <!-- .element: class="fragment" -->
   - but only if you share your code
 <!-- .element: class="fragment" -->
 
 ---
 
-### Course overview 
-#### Theory and practice 
+### Course overview
+#### Theory and practice
 
 - not in contrast with each other
 - one complements the other
@@ -88,14 +88,14 @@ Lesson 1, Tuesday, 2021-03-02
 
 ---
 
-### Course overview 
+### Course overview
 #### Questions
 
 - don't be shy (or scared), ask questions!
   - as many as possible, or as you want/need
 - interrupt us
 - there are no stupid questions
-- ask us to repeat stuff, if you think it's not clear 
+- ask us to repeat stuff, if you think it's not clear
 - if something's not clear for you, it's likely that it's not clear for many others
 
 ---
@@ -117,12 +117,12 @@ Lesson 1, Tuesday, 2021-03-02
 - topics, concepts and patterns common to every programming language
 - basic math and logical operations
 - text manipulation
-- understanding and controlling the flow of a program 
+- understanding and controlling the flow of a program
 
 ---
 
 ### Class
-#### Course overview: JavaScript and the browser / web 
+#### Course overview: JavaScript and the browser / web
 
 - interacting with a web page
 - creating / manipulating HTML elements on the fly
@@ -133,7 +133,7 @@ Lesson 1, Tuesday, 2021-03-02
 ---
 
 ### Class
-#### Course overview: JavaScript and remote resources 
+#### Course overview: JavaScript and remote resources
 
 - get data from external websites and services
 - use third-party plugins and libraries
@@ -142,7 +142,7 @@ Lesson 1, Tuesday, 2021-03-02
 ---
 
 ### Class
-#### Course overview: final project 
+#### Course overview: final project
 
 A project chosen by you to put into practice everything we've learned in class
 
@@ -252,7 +252,7 @@ The way I use it:
 
 ### Additional Material
 
-* [javascript.info](https://javascript.info/) - tutorials with nice (often visual) explanations  
+* [javascript.info](https://javascript.info/) - tutorials with nice (often visual) explanations
 * [freecodecamp.org](https://www.freecodecamp.org/) - full free courses on many topics
 * [udemy.com](https://www.udemy.com): Introduction to JS (course)
 * [codeacademy.com](https://www.codecademy.com): Introduction to JS (another course)
@@ -372,7 +372,7 @@ Can they afford buying popcorn too?
 
 ### Data Type: String
 
-* A **String** is a sequence of characters 
+* A **String** is a sequence of characters
     * a good way to represent text
 * It starts and ends with a `"` double quote
 * It can also start and end with a `'` single quote
@@ -385,8 +385,8 @@ Can they afford buying popcorn too?
 Open the console, and type in the following strings:
 
 * Your full name
-* Your favourite food 
-* Name of your favourite book / tv series / anime 
+* Your favourite food
+* Name of your favourite book / tv series / anime
 
 ---
 
@@ -523,7 +523,7 @@ All of these return a boolean!
 
 Use JavaScript to check if:
 * you are older than me (I'm 39)
-* your first name is the same as mine 
+* your first name is the same as mine
 
 ---
 
@@ -536,75 +536,12 @@ Use JavaScript to check if:
 
 ---
 
-
 ### Logical Operators
 
-These operators also work only on Boolean values:
+These operators work only on Boolean values:
 
 * `!` Logical NOT
 * `&&` Logical AND
 * `||` Logical OR
 
 We are not going to explain them today, but definitely when we talk about conditionals.
-
----
-
-### Data Type: Undefined
-
-*  **Undefined** has only one value: `undefined`
-* it is just `undefined`
-* it means there is no value here
-
----
-
-### Try it out
-
-Now, try to enter some data to the JavaScript console, but think of the data type first:
-
-* Your name
-* Your shoe size
-* Wether you think it's ok to put pineapple on pizza 
-
----
-
-### Try it out: Solution
-
-```js
-"Carlo"
-45
-false
-```
-
----
-
-### Summary: what did we learn?
-
-- what is JavaScript?
-<!-- .element: class="fragment"  -->
-- how do we open the JavaScript console in the browser?
-<!-- .element: class="fragment"  -->
-- what can we do in the JavaScript console?
-<!-- .element: class="fragment"  -->
-- what operators have we learnt?
-<!-- .element: class="fragment"  -->
-- what data types have we learnt?
-<!-- .element: class="fragment" -->
-
----
-
-### Summary: Basic Data types 
-
-- number
-- string 
-- boolean
-- undefined 
-
----
-
-### Summary: Operators
-
-| Group | Operators | Example |
-| ----- | --------- | ------- |
-| Numerical Operators | `+ - * / **` | `5 + 4 * 3`<br/>`7 / 2 - 2`<br/>`"Hello" + " World"` |
-| Comparison Operators | `=== !== < > <= >=` | `30 !== 25`<br/>`20 >= 18` |
-| Logical Operators | &#124;&#124; `&& !` | `true && !false`<br />`9 >= 5 && 1 < 15` |
