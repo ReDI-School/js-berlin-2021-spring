@@ -149,9 +149,9 @@ Write the code below in the `main.js` file and reload the page
 ```js
 let pricePerTicket = 8;
 let friends = 4;
-let popcornPrice = 10;
+let pricePerPopcorn = 10;
 let totalBudget = 30;
-let totalPrice = friends * (pricePerTicket + popcornPrice);
+let totalPrice = friends * (pricePerTicket + pricePerPopcorn);
 let canGoToCinema = totalBudget >= totalPrice;
 ```
 
@@ -181,9 +181,9 @@ Let's try it:
 ```js
 let pricePerTicket = 8;
 let friends = 4;
-let popcornPrice = 10;
+let pricePerPopcorn = 10;
 let totalBudget = 30;
-let totalPrice = friends * (pricePerTicket + popcornPrice);
+let totalPrice = friends * (pricePerTicket + pricePerPopcorn);
 let canGoToCinema = totalBudget >= totalPrice;
 
 console.log(canGoToCinema);
@@ -396,38 +396,3 @@ Use comments only to add important information that is not already clear from re
 
 ---
 
-### Exercise: Simple shop
-
-<!-- .slide: style="font-size:80%" -->
-
-- you have a shop that sells: shirts (12.99 €), pants (18.99 €), skirts (15.99 €), socks (5.99 €), shoes (25.99 €)
-- a customer has 100 € and buys 2 pair of pants, 1 shirt and 1 pair of shoes
-- shipping costs are 9.99 €
-
-Create variables with proper names for every known data.
-
-Calculate:
-- total spent by the customer (including shipping costs)
-- money left for the customer
-
-Format and print the results to the console.
-
----
-
-### Bonus exercise: swap variables 
-
-Given 2 variables containing numbers, can you swap the values between them?
-
-```js
-let a = 5;
-let b = 10;
-
-console.log("Values of a and b are", a, b); // this prints 5 and 10
-
-// Swap values here...
-
-console.log("Now the values of a and b are", a, b); // this should print 10 and 5
-
-```
-
-If needed, ask us for a hint.
