@@ -338,7 +338,6 @@ console.log("Total is " + total);
 We can use `console.log()` to print multiple values at once, simply by separating them with a comma.
 
 ```js
-```js
 let people = 9;
 let ticketPrice = 8;
 let popcornPrice = 10;
