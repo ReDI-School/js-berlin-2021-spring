@@ -6,6 +6,16 @@ Lesson 3, Tuesday, 2021-03-09
 
 ---
 
+### Lesson overview
+
+1. last week's homework
+1. using VSCode
+1. loading `JavaScript` code inside an `HTML` page
+1. basic debugging with `console.log()`
+1. adding comments to our code
+
+---
+
 ### Homework 
 
 <!-- .slide: style="font-size:70%" -->
@@ -252,31 +262,73 @@ For now we can use `console.log()` to keep track of a variable to see how it cha
 Let's see an example:
 
 ```js
-let a = 2;
-let b = 3;
-let c = a + b * 4;
-a += c * b;
-b = a * 2 - c;
+let people = 9;
+let ticketPrice = 8;
+let popcornPrice = 10;
+let drinksPrice = 5;
+let promotionDiscount = 2;
+
+let costs = ticketPrice + popcornPrice;
+let total = costs - promotionDiscount * people;
+
+people++;
+
+total = total + ticketPrice;
+total = drinksPrice * 3 + popcornPrice * 2;
+
+console.log("Total is " + total);
 ```
 
-Besides being a useless program, it's a bit hard to read.
-
-What's the value of `b` at the end?
+`total` at the end is 35, a bit cheap for 10 people. Let's try to find what's wrong.
 
 ---
 
 ### Debugging with console.log()
 
+I add console.log() here and there to check that values are correct at every step of the program.
+
 ```js
-let a = 2;
-let b = 3;
-let c = a + b * 4;
-a += c * b;
-console.log("a " + a);
-console.log("b " + b);
-console.log("c " + c);
-b = a * 2 - c;
-console.log("b " + b);
+let people = 9;
+let ticketPrice = 8;
+let popcornPrice = 10;
+let drinksPrice = 5;
+let promotionDiscount = 2;
+
+let costs = ticketPrice + popcornPrice;
+let total = costs - promotionDiscount * people;
+
+people++;
+
+total = total + ticketPrice;
+console.log("drinksPrice: " + drinksPrice);
+console.log("popcornPrice: " + popcornsPrice);
+total = drinksPrice * 3 + popcornPrice * 2;
+
+console.log("Total is " + total);
+```
+
+---
+
+### Debugging with console.log()
+
+After some debugging, here's the correct version
+
+```js
+let people = 9;
+let ticketPrice = 8;
+let popcornPrice = 10;
+let drinksPrice = 5;
+let promotionDiscount = 2;
+
+let costs = ticketPrice + popcornPrice;
+let total = (costs - promotionDiscount) * people;
+
+people++;
+
+total = total + ticketPrice;
+total = total + drinksPrice * 3 + popcornPrice * 2;
+
+console.log("Total is " + total);
 ```
 
 ---
@@ -286,13 +338,17 @@ console.log("b " + b);
 We can use `console.log()` to print multiple values at once, simply by separating them with a comma.
 
 ```js
-let a = 5;
-let b = 7;
-let c = a + b * 4;
-a += c * b;
-console.log("a", a, "b", b, "c", c);
-b = a * 2 - c;
-console.log("b", b);
+```js
+let people = 9;
+let ticketPrice = 8;
+let popcornPrice = 10;
+let drinksPrice = 5;
+let promotionDiscount = 2;
+
+let costs = ticketPrice + popcornPrice;
+console.log("people", people);
+console.log("a single ticket costs:", ticketPrice);
+console.log("costs", costs, "drinks price", drinksPrice);
 ```
 
 ---
