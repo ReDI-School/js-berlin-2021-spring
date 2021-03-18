@@ -86,8 +86,8 @@ let drawingDepartmentSales = 0;
 
 */
 
-let totaleSalesLastYear = 0;
-let totaleSalesGoal = 0;
+let totalSalesLastYear = 0;
+let totalSalesGoal = 0;
 
 
 
