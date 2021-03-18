@@ -360,6 +360,7 @@ We can also use the `Watch` panel on the right to keep an eye on variables or wh
 
 - Add a debugger statement somewhere in the code below and run it.
 - add some variables and/or expression to `watch` and see their values changing
+- be sure to remove the `debugger` statement when you are happy with how the code works
 
 ```js
 let people = 9;
