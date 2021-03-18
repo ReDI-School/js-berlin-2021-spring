@@ -6,6 +6,14 @@ Lesson 6, Tuesday, 2021-03-16
 
 ---
 
+### Lesson overview 
+
+1. short recap
+1. introduction to the JavaScript debugger
+1. long exercise on if...else statement
+
+---
+
 ### Recap 
 
 What are their values?
@@ -117,6 +125,8 @@ if (time === 16) {
 ```
 
 ---
+
+<!-- .slide: id="debugger" -->
 
 # Debugger
 
@@ -366,5 +376,16 @@ people++;
 total = total + ticketPrice;
 total = drinksPrice * 3 + popcornPrice * 2;
 ```
+
+---
+
+### Next lesson
+
+Functions
+1. What is a function
+1. why do we need functions
+1. defining a function
+1. calling (executing) a function
+1. function parameters
 
 ---
