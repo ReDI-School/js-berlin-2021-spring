@@ -2,7 +2,7 @@
 
 # Basic Frontend - Spring 2021
 
-Lesson 6, Tuesday, 2021-03-16
+Lesson 6, Tuesday, 2021-03-18
 
 ---
 
