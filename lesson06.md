@@ -332,16 +332,6 @@ With this, we can follow JavaScript's execution.
 
 ---
 
-### Debugging: the debugger 
-
-If our code contain a `debugger` statement and we open the browser console, we'll see this thing on top:
-
-![](images/debugger.png) <!-- .element: style="display: block; margin: auto;" -->
-
-With this, we can follow JavaScript's execution.
-
----
-
 ### Debugging: the debugger
 
 ![](images/debugger-full-view.png) <!-- .element: style="width: 1000px; display: block; margin: auto;" -->

@@ -29,7 +29,7 @@ if () {
     You receive a report with the sales from the Sci-fi department and the Crime department.
     You want to check that the sales of at least one of the two departments are within a certain range, otherwise it's bad news for the store 
 
-    - write an if...statement that prints true if at least one of the 2 sales amount is in the range between 200 and 500, false otherwise
+    - write an if...else statement that prints true if at least one of the 2 sales amount is in the range between 200 and 500, false otherwise
     */
 
 let sciFiDepartmentSales = 0;
@@ -40,7 +40,7 @@ let crimeDepartmentSales = 0;
     You also receive the report from the Comic Book department.
     Using the variables from Exercise 2, check that at least one of the three departments sold enough.
 
-    - write an if...statement that prints true if at least one of the 3 sales amount is in the range between 200 and 500, false otherwise
+    - write an if...else statement that prints true if at least one of the 3 sales amount is in the range between 200 and 500, false otherwise
 */
 
 let comicBookDeparttmentSales = 0;
