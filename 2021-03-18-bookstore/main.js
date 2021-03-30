@@ -9,7 +9,7 @@
     - every exercise mentions if...else statement, but in some cases you might need to use also the "else if"
 */
 
-let sales = 0;
+let sales = 99;
 
 /*
     Exercise 1:
@@ -18,10 +18,10 @@ let sales = 0;
     - complete the if...else statement so that the result is true if sales are greater than or equal to 70 and less than or equal to 99 
 */
 
-if () {
-    console.log("Sales are: " + sales + ". Are they between 70 and 99?", true);
+if (sales >= 70 && sales <= 99) {
+  console.log("Sales are: " + sales + ". Are they between 70 and 99?", true);
 } else {
-    console.log("Sales are: " + sales + ". Are they between 70 and 99?", false);
+  console.log("Sales are: " + sales + ". Are they between 70 and 99?", false);
 }
 
 /*
@@ -33,7 +33,17 @@ if () {
     */
 
 let sciFiDepartmentSales = 0;
-let crimeDepartmentSales = 0;
+let crimeDepartmentSales = 300;
+let isSciFiSalesInRange =
+  sciFiDepartmentSales >= 200 && sciFiDepartmentSales <= 500;
+let isCrimeSalesInRange =
+  crimeDepartmentSales >= 200 && crimeDepartmentSales <= 500;
+
+if (isSciFiSalesInRange || isCrimeSalesInRange) {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 /*
     Exercise 3:
@@ -43,7 +53,7 @@ let crimeDepartmentSales = 0;
     - write an if...else statement that prints true if at least one of the 3 sales amount is in the range between 200 and 500, false otherwise
 */
 
-let comicBookDeparttmentSales = 0;
+let comicBookDepartmentSales = 0;
 
 /*
     Exercise 4:
@@ -53,8 +63,8 @@ let comicBookDeparttmentSales = 0;
     - write an if...else statement that prints true if the 2 sales amounts are both greater than 300, false otherwise
 */
 
-let cookingDepartmentSales = 0;
-let drawingDepartmentSales = 0;
+let cookingDepartmentSales = 50;
+let drawingDepartmentSales = 50;
 
 /*
     Exercise 5:
@@ -64,7 +74,13 @@ let drawingDepartmentSales = 0;
     example: cookingDepartmentSales = 400, drawingDepartmentSales = 500 - output: "Drawing Department", 500 
 */
 
-
+if (cookingDepartmentSales > drawingDepartmentSales) {
+  console.log("cooking department", cookingDepartmentSales);
+} else if (drawingDepartmentSales > cookingDepartmentSales) {
+  console.log("drawing department", drawingDepartmentSales);
+} else {
+  console.log("equal sales", drawingDepartmentSales);
+}
 
 /*
     Exercise 6:
@@ -73,6 +89,56 @@ let drawingDepartmentSales = 0;
     - write an if...else statement that prints the value of the largest number and the name of that department
 */
 
+cookingDepartmentSales = 550;
+drawingDepartmentSales = 150;
+comicDepartmentSales = 450;
+
+if (
+  cookingDepartmentSales > drawingDepartmentSales &&
+  cookingDepartmentSales > comicDepartmentSales
+) {
+  console.log("cooking department", cookingDepartmentSales);
+} else if (
+  drawingDepartmentSales > cookingDepartmentSales &&
+  drawingDepartmentSales > comicDepartmentSales
+) {
+  console.log("drawing department", drawingDepartmentSales);
+} else {
+  console.log("comic department", comicDepartmentSales);
+}
+
+let maximum = cookingDepartmentSales;
+let bestSellingDepartment = "cooking department";
+
+if (drawingDepartmentSales > maximum) {
+  maximum = drawingDepartmentSales;
+  bestSellingDepartment = "drawing department";
+}
+
+if (comicDepartmentSales > maximum) {
+  maximum = comicDepartmentSales;
+  bestSellingDepartment = "comic department";
+}
+
+console.log(bestSellingDepartment, maximum);
+
+function maximumOf3(value1, value2, value3) {
+  let maximum = value1;
+
+  if (value2 > maximum) {
+    maximum = value2;
+  }
+
+  if (value3 > maximum) {
+    maximum = value3;
+  }
+  return maximum;
+}
+
+let result1 = maximumOf3(200, 55, 100);
+console.log(result1);
+let result2 = maximumOf3(1200, 2255, -1);
+console.log(result2);
 
 /*
     Exercise 7:
@@ -89,8 +155,6 @@ let drawingDepartmentSales = 0;
 let totalSalesLastYear = 0;
 let totalSalesGoal = 0;
 
-
-
 /*
     Exercise 8:
     You have to add a new feature to the website that shows a custom greeting message if a user is logged in.
@@ -98,7 +162,6 @@ let totalSalesGoal = 0;
     - write an if...else statement to print the message "Hello, Carlo!" if a user is logged in (and if their name is Carlo, of course), simply "Hello" otherwise
     - create a variable for the name of the user and a variable to specify if the user is logged in or not
 */
-
 
 /*
     Exercise 9:
