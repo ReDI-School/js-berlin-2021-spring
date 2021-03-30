@@ -6,6 +6,17 @@ Lesson 8, Tuesday, 2021-03-30
 
 ---
 
+### Lesson overview
+
+- review bookstore exercise
+- function recap
+- benefits of using functions
+- function parameters
+- return statement vs console.log()
+- practice
+
+---
+
 <!-- .slide: id="functions" -->
 
 # Functions
@@ -26,9 +37,9 @@ Lesson 8, Tuesday, 2021-03-30
 ### Example: introduce yourself
 
 ```js
-let melanieIntroduction = "Hello, my name is Melanie. I come from Germany and my favuorite food is broccoli";
-let marcoIntroduction = "Hello, my name is Marco. I come from Italy and my favuorite food is cheese";
-let nataliaIntroduction = "Hello, my name is Natalia. I come from Spain and my favuorite food is lentils";
+let melanieIntroduction = "Hello, my name is Melanie. I come from Germany and my favorite food is broccoli";
+let marcoIntroduction = "Hello, my name is Marco. I come from Italy and my favorite food is cheese";
+let nataliaIntroduction = "Hello, my name is Natalia. I come from Spain and my favorite food is lentils";
 
 console.log(melanieIntroduction);
 console.log(marcoIntroduction);
@@ -42,7 +53,7 @@ console.log(nataliaIntroduction);
 
 ```js
 function introduceYourself(name, originCountry, favouriteFood) {
-    let message = "Hello, my name is " + name + ". I come from " + originCountry + " and my favuorite food is " + favouriteFood;
+    let message = "Hello, my name is " + name + ". I come from " + originCountry + " and my favorite food is " + favouriteFood;
     return message;
 }
 
@@ -112,13 +123,13 @@ In real life we don't have to know how things work in order to use them:
 
 We perform a simple operation (pressing a button, turning a key) without needing to worry about what happens behind the scenes. 
 
-The inner complexities are hidden from us. To an extent, it's what happens with functions.
+The inner complexities are hidden from us. To an extent, this is what happens with functions.
 
 ---
 
 ### Avoid repetitions 
 
-The biggest benefit is probably the ability to group many lines of code together and easily execute them as many times as we want without having to write the whole thing again.
+One of the biggest benefits is probably the ability to group many lines of code together and easily execute them as many times as we want without having to write the whole code again.
 
 ```js
 function maximumOf3(value1, value2, value3) {
@@ -160,7 +171,7 @@ The same way in which a variable contains a value, a function contains `code`.
 
 ### Functions: execution
 
-Code is normally executed by JavaScript.
+Code is executed by JavaScript line by line.
 
 When some code is inside a function, we have to explicity "call" that function in order to execute the code inside.
 
@@ -174,7 +185,7 @@ We write the name of the function followed by open and closed parenthesis.
 ### Exercise 
 
 1. create a function called `sum`
-1. this function can take in input two parameters called `a` and `b`
+1. this function can take in two parameters called `a` and `b`
 1. inside the function, calculate the sum of `a` and `b` and save it in a variable called `result`
 1. return `result`
 1. call the function with two numerical values and save the result in a variable
@@ -276,7 +287,13 @@ console.log(max);
 
 ### return statement vs console.log()
 
-If I didn't return a value from inside the `sum()` function, I wouldn't have been able to use it outside of it.
+In the previous example:
+
+- I use the result of 3 calls to `sum()` in another function
+- to do so, I first save the different results in separate variables
+    - it means that the total calculated inside the function, must be used outside of it 
+- to do so, `sum()` must `return` a value
+    - simply using `console.log()` wouldn't work 
 
 ---
 
@@ -328,18 +345,29 @@ function minimumOf2(value1, value2) {
 
 ---
 
-### Exercise
+### Exercise 1
 
-1. create a function that takes
+Create a function that calculates the `square` of a number
 
+```js
+// the function should be used like this
+let result = square(2); 
+console.log(result); // 4
+
+result = square(3);
+console.log(result); // 9
+
+result = square(4);  
+console.log(result); // 16
+```
 
 ---
 
 
 
-### Exercise
+### Exercise 2
 
-Write a function called `celsiusToFahrenheit`, which takes the degrees in C, and returns it in F.
+Write a function called `celsiusToFahrenheit`, which takes the degrees in C (celsius), and returns it in F (fahrenheit).
 
 test your function with the values 28 and 31.
 
@@ -349,16 +377,39 @@ Fahrenheit = Celsius multiplied by 1.8 plus 32
 
 ---
 
-### Solution
+### Exercise 3
+
+Create a function that takes a day of the week and returns a message depending on the day.
+
+Example:
 
 ```js
-function celsiusToFahrenheit(degreesCelsius) {
-  let degreesFahrenheit = degreesCelsius * 1.8 + 32;
-  return degreesFahrenheit;
-}
-
-console.log("28 degrees: " + celsiusToFahrenheit(28));
-console.log("32 degrees: " + celsiusToFahrenheit(32));
+let message = messageOfTheDay('Monday');
+console.log(message); // "I hate Mondays"
+message = messageOfTheDay('Sunday');
+console.log(message); // "Yeee! Weekend!"
+message = messageOfTheDay('Tuesday');
+console.log(message); // "Well, at least there's class at ReDI"
 ```
+
+Come up with your own messages!
+
+---
+
+### Exercise 4
+
+Go through all the examples with function you've written so far and try to put function calls directly inside `console.log()`.
+
+For example:
+
+```js
+console.log(sum(2, 3));
+```
+
+Does it work?
+
+Why?
+
+Can you explain it?
 
 ---
