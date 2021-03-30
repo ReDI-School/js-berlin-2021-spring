@@ -136,7 +136,8 @@ function maximumOf3(value1, value2, value3) {
     let max = value1;
     if (value2 > max) {
         max = value2;
-    } else if (value3 > max) {
+    } 
+    if (value3 > max) {
         max = value3;
     }
     return max;
