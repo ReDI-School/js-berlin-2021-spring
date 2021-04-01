@@ -190,7 +190,7 @@ function mySuperFunction() {
 }
 ```
 
-Bonus: Can you output how often your button as clicked?
+Bonus: Can you output how often your button was clicked?
 
 ---
 
