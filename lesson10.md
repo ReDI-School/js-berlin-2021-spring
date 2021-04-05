@@ -211,7 +211,7 @@ anne.age = 35;
 
 ### Object data type
 
-When working with Object data type, the order does not matter
+When working with Object data type, the order of the properties does not matter
 
 ```js
 {name: "Anne", age: 34, height: 170}
