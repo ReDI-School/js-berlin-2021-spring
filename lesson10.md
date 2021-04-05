@@ -104,7 +104,7 @@ In Abdullah’s game, we can think of a collection for holding a person’s name
 
 ### Increasing Code’s ability
 
-<span style="color: indianred;">Collecting</span> values into one unit is so essential, that JS provides 2 different data types for representing them: <span style="color: indianred;">Object</span> and <span style="color: indianred;">Array</span>.
+<span style="color: indianred;">Collecting</span> values into one unit is so essential that JS provides 2 different data types for representing them: <span style="color: indianred;">Object</span> and <span style="color: indianred;">Array</span>.
 
 Today, we will introduce the <span style="color: indianred;">Object</span> data type and cover <span style="color: indianred;">Array</span> in another lesson.
 
