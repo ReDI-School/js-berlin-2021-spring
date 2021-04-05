@@ -83,7 +83,7 @@ person3Name, person3Age, person3Height, person3Origin
 
 ---
 
-In producing new info from existing data, basic data types are useful when
+In producing new information from existing data, basic data types are useful when
 
 - combining multiple values into a single value
 - creating multiple variables to hold related data
