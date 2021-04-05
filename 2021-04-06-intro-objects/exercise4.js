@@ -5,7 +5,7 @@ let me = {
     hobbies: "hiking and programming",
     favouriteMusic: "Jazz",
     isStudent: true,
-    greet: function() { return "Hello, I am " + this.name;}
+    greet: function () { return "Hello, I am " + this.name; }
 };
 
 let classmate = {
@@ -15,7 +15,7 @@ let classmate = {
     hobbies: "swimming and jogging",
     favouriteMusic: "New Age",
     isStudent: false,
-    greet: function() { return "Hello, I am " + this.name;}
+    greet: function () { return "Hello, I am " + this.name; }
 };
 
 console.log(me.greet());

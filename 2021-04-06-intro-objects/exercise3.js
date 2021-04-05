@@ -7,9 +7,8 @@ function introduce(person)
         studentStatus = "I am not a student";
     }
     return "Hi, my name is " + person.name + "." +
-    "I am " + person.age + " years-old." +
-    "My favourite food is " + person.favouriteFood + "." + 
-    "I like " + hobbies + "." +
-    "I enjoy listening to " + favouriteMusic + "." +
-    studentStatus;
-}
+        "I am " + person.age + " years-old." +
+        "My favourite food is " + person.favouriteFood + "." +
+        "I like " + hobbies + "." +
+        "I enjoy listening to " + favouriteMusic + "." +
+        studentStatus;
