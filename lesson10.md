@@ -179,7 +179,7 @@ And here is how we create an <span style="color: cadetblue;">object</span> holdi
 
 ### Assign to a variable
 
-And how we <span style="color: cadetblue;">assign an object to a variable</span>:
+And here is how we <span style="color: cadetblue;">assign an object to a variable</span>:
 
 ```js
 let anne = {age: 34};
