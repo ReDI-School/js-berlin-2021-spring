@@ -189,7 +189,7 @@ let anne = {age: 34};
 
 ### Read a property’s value
 
-And how we <span style="color: cadetblue;">read the value back from the object</span>:
+Here is how we <span style="color: cadetblue;">read the value of a property from the object</span>:
 
 ```js
 anne.age
