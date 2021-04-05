@@ -39,7 +39,7 @@ Limited ability to interact with a user
 
 ---
 
-The values we operate on are so <span style="color: indianred;">basic</span> that, any combination of values still produces one single value
+The values we operate on are so <span style="color: indianred;">basic</span> that any combination of values still produces one single value
 
 Number:
 
