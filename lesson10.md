@@ -277,7 +277,7 @@ A property's value can also be a function
     name: "Ekas",
     greet: function() {
         return "Hello, I am " + this.name;
-        }
+    }
 }
 ```
 
