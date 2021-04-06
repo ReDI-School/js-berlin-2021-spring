@@ -101,7 +101,7 @@ Today, we will introduce the Object data type and cover Array in another lesson.
 
 ### JS Objects
 
-A JS Object collects values between two curly brackets
+A JS Object collects values between two curly braces
 
 ```js
 {
@@ -112,7 +112,7 @@ A JS Object collects values between two curly brackets
 }
 ```
 
-Every element between two curly brackets is called an <span style="color: indianred;">object property</span>
+Every element between two curly braces is called an <span style="color: indianred;">object property</span>
 
 This object has 4 properties
 
