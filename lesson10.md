@@ -141,12 +141,30 @@ Each definition is a <span style="color: indianred;">value</span>
 
 ### Examples
 
+Object with properties
+
 ```js
 {name: "Anne", age: 34, height: 170, origin: "Denmark"}
 
 {name: "Andy", age: 27, height: 185, origin: "England"}
 
 {name: "Ahmed", age: 30, height: 177, origin: "Syria"}
+```
+
+---
+
+Object with key-value pairs
+
+```js
+{
+    Monday: "Oh, it's Monday again",
+    Tuesday: "Much better",
+    Wednesday: "Already mid-week :)",
+    Thursday: "Soon it is weekend",
+    Friday: "Last day of the work-week",
+    Saturday: "Do some shopping",
+    Sunday: "Rest at last"
+}
 ```
 
 ---
@@ -239,21 +257,22 @@ Every object we create is unique, even though they might contain the same data
 let anne = {name: "Anne", age: 34};
 let anneAgain = {name: "Anne", age: 34};
 
-console.log("me and meAgain are not the same", anne !== anneAgain);
-// true
+let areNotSame = anne !== anneAgain; // true
+
+console.log("me and meAgain are not the same", areNotSame);
 ```
 
 ---
 
-There is only one instance for each basic data type value
+However values which belong to basic data types, number, boolean, string, undefined, there is only one instance
 
 ```js
 let name = "Anne";
 let nameAgain = "Anne";
 
-console.log("name and nameAgain are the same", 
-            name === nameAgain);
-// true
+let areSame = name === nameAgain; // true
+
+console.log("name and nameAgain are the same", areSame);
 ```
 
 ---
