@@ -12,6 +12,31 @@ Lesson 10, Tuesday, 2021-04-06
 
 ---
 
+<!-- .slide: style="font-size:80%" -->
+
+### Outline
+
+- Why we need a new data type
+- Limitations of basic data types
+- A collection of values vs a basic value
+- Two ways of creating a collection
+- Object data type
+- Terminology: property, name, value, key-value pair
+- Operations on Objects
+- Qualities of object data
+    - Order of properties does not matter
+    - Property names must be unique
+    - Every object is unique
+- Objects can have methods
+    - `this` keyword
+- Exercises
+
+---
+
+### Why we need a new data type
+
+---
+
 ### HTML Elements
 
 An HTML element collects values it needs in its opening tag:
@@ -22,6 +47,10 @@ An HTML element collects values it needs in its opening tag:
 ```
 
 src, alt, type, and placeholder are called <span style="color: indianred;">HTML attributes</span>
+
+---
+
+### Limitations of basic data types
 
 ---
 
@@ -39,7 +68,7 @@ Limited ability to interact with a user
 
 ---
 
-The values we operate on are so <span style="color: indianred;">basic</span> that any combination of values still produces one single value
+A combination of values still produces a single value
 
 Number:
 
@@ -51,7 +80,7 @@ String:
 
 ---
 
-The data about Anne is stored in multiple variables
+An entity's information can only be captured in multiple variables
 
 ```js
 let name = "Anne";
@@ -63,7 +92,7 @@ let likesPizza = true;
 
 ---
 
-Keeping track of multiple people is difficult
+Keeping track of multiple entities is difficult
 
 ```js
 person1Name, person1Age, person1Height, person1Origin
@@ -73,13 +102,15 @@ person3Name, person3Age, person3Height, person3Origin
 
 ---
 
-In producing new information from existing data, basic data types are useful when
+Basic data types are useful when we are okay with
 
 - combining multiple values into a single value
-- creating multiple variables to hold related data
-- having multiple entities
+- creating multiple variables to represent related data
+- few number of entities
 
-are not an issue for us
+---
+
+### A collection of values vs a basic value
 
 ---
 
@@ -91,17 +122,37 @@ In Abdullah’s game, we can think of a collection for holding a person’s name
 
 ---
 
+### Comparision between a basic value and a collection
+
+|Criteria|Basic value|A collection|
+|--------|-----------|------------|
+|Sample|34| [34, "Anne", 170]|
+|Number of values inside|1|3|
+|Type of values inside|`number`|`number`, `string`, `number`|
+|Operations|defined by data type|defined by data type + defined by us|
+|Equality of values| `34 === 34 //true`|`[34] === [34] //false`|
+
+---
+
+### Two ways of creating a collection
+
+---
+
 ### Increasing Code’s ability
 
 <span style="color: indianred;">Collecting</span> values into one unit is so essential that JS provides 2 different data types for representing them: <span style="color: indianred;">Object</span> and <span style="color: indianred;">Array</span>.
 
-Today, we will introduce the Object data type and cover Array in another lesson.
+Today's topic is Object data type
+
+---
+
+### Object data type
 
 ---
 
 ### JS Objects
 
-A JS Object collects values between two curly braces
+A JS Object collects data which belong to a single entity using two curly braces
 
 ```js
 {
@@ -112,21 +163,39 @@ A JS Object collects values between two curly braces
 }
 ```
 
-Every element between two curly braces is called an <span style="color: indianred;">object property</span>
+---
 
-This object has 4 properties
+### Terminology
 
 ---
+
+### Property
+
+Every element between two curly braces is called an <span style="color: indianred;">object property</span>
+
+```js
+{
+    userID: 1234,
+    memberSince: "01/01/2001"
+}
+
+This object has 2 properties
+
+---
+
+### Property name and property value
 
 Every property has a <span style="color: indianred;">name</span> and a <span style="color: indianred;">value</span>
 
-`age: 34` is a property
-
-`age` is property's name
-
-`34` is property's value
+|Category|Sample|
+----------|----------
+|Property: |`age: 34`|
+|Property's name: |`age`|
+|Property's value: |`34`|
 
 ---
+
+### Key-value pair
 
 A property is also called a <span style="color: indianred;">key-value pair</span>, especially useful when you think of your object as a dictionary
 
@@ -166,6 +235,10 @@ Object with key-value pairs
     Sunday: "Rest at last"
 }
 ```
+
+---
+
+### Operations on Objects
 
 ---
 
@@ -227,7 +300,27 @@ anne.age = 35;
 
 ---
 
-### Object data type
+### Add a new property
+
+Here is an existing object
+
+```js
+let anne = {name: "Anne"};
+```
+
+here is how to add a new property to `anne`
+
+```js
+anne.address = "123 Street, Berlin";
+```
+
+---
+
+### Qualities of object data
+
+---
+
+### Order of properties does not matter
 
 When working with the Object data type, the order of the properties does not matter
 
@@ -239,6 +332,8 @@ When working with the Object data type, the order of the properties does not mat
 
 ---
 
+### Property names must be unique
+
 When working with the Object data type, property names must be unique
 
 ```js
@@ -249,25 +344,27 @@ When working with the Object data type, property names must be unique
 
 ---
 
-### Objects are unique
+### Every object is unique
 
-Every object we create is unique, even though they might contain the same data
+Every object we create is only identical to itself but not to a different copy, even though they might contain the same data
 
 ```js
-let anne = {name: "Anne", age: 34};
+let anne      = {name: "Anne", age: 34};
 let anneAgain = {name: "Anne", age: 34};
 
+let areSame = anne === anne; // true
 let areNotSame = anne !== anneAgain; // true
 
-console.log("me and meAgain are not the same", areNotSame);
+console.log("anne and anne are the same", areSame);
+console.log("anne and anneAgain are not the same", areNotSame);
 ```
 
 ---
 
-However values which belong to basic data types, number, boolean, string, undefined, there is only one instance
+However for values which belong to basic data types, `number, boolean, string, undefined`, there is only one copy
 
 ```js
-let name = "Anne";
+let name      = "Anne";
 let nameAgain = "Anne";
 
 let areSame = name === nameAgain; // true
@@ -277,12 +374,29 @@ console.log("name and nameAgain are the same", areSame);
 
 ---
 
+### Objects can have methods
+
+---
+
 ### Methods
 
 A property's value can also be a function
 
 ```js
-{
+let person = {
+    name: "Ekas",
+    greet: function() {
+        return "Hello, I am " + person.name;
+    }
+}
+```
+
+---
+
+There is an alternate way to define the greet method:
+
+```js
+let person = {
     name: "Ekas",
     greet: function() {
         return "Hello, I am " + this.name;
@@ -290,18 +404,47 @@ A property's value can also be a function
 }
 ```
 
+`this` and `person` point to the same object
+
 ---
 
 ### this keyword
 
-Inside the greet function, we used `this`, which is a variable we use whenever we need to refer back to the object we are working with. The following is always true .
+`this` is an automatically defined variable
+
+`this` points to the enclosing object
 
 ```js
-let me = {
-    name: "Jane", 
+let person = {
+    name: "Ekas", 
     greet: function() {
-        console.log("This is true all the time", this === me);
-        // true
+        let areSame = this === person; // true
+        console.log("This is true all the time", areSame);
+        return "Hello, I am " + this.name;
+    }
+}
+```
+
+---
+
+Prefer the following code
+
+```js
+let person = {
+    name: "Ekas", 
+    greet: function() {
+        return "Hello, I am " + this.name;
+    }
+}
+```
+
+to this code
+
+```js
+let person = {
+    name: "Ekas", 
+    greet: function() {
+        return "Hello, I am " + person.name;
     }
 }
 ```
@@ -352,12 +495,13 @@ I am a student."
 ### Exercise 4
 
 Add a `greet` method to `me` and `classmate` objects
+`greet` method should return a string `"Hello, I am <name>"`
 
 Call them using
 
 ```js
-me.greet();
-classmate.greet();
+console.log(me.greet());
+console.log(classmate.greet());
 ```
 
 ---
