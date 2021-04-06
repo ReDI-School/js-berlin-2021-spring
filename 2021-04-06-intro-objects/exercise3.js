@@ -12,3 +12,5 @@ function introduce(person)
         "I like " + hobbies + "." +
         "I enjoy listening to " + favouriteMusic + "." +
         studentStatus;
+    
+}
