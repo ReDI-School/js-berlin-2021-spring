@@ -104,13 +104,15 @@ Today, we will introduce the Object data type and cover Array in another lesson.
 A JS Object collects values between two curly brackets
 
 ```js
-{name: "Anne", 
- age: 34, 
- height: 170, 
- origin: "Denmark"}
+{
+    name: "Anne", 
+    age: 34, 
+    height: 170, 
+    origin: "Denmark"
+}
 ```
 
-Every element between two curley brackets is called an <span style="color: indianred;">object property</span>
+Every element between two curly brackets is called an <span style="color: indianred;">object property</span>
 
 This object has 4 properties
 
@@ -126,7 +128,7 @@ Every property has a <span style="color: indianred;">name</span> and a <span sty
 
 ---
 
-A property is also called a <span style="color: indianred;">key-value pair</span>, especially useful when you view your object as a dictionary
+A property is also called a <span style="color: indianred;">key-value pair</span>, especially useful when you think of your object as a dictionary
 
 
 ![](images/dictionary.png) <!-- .element: style="width: 1000px; height: 300px; display: block; margin: auto;" -->
@@ -154,20 +156,20 @@ Each definition is a <span style="color: indianred;">value</span>
 A collection has a data type: <span style="color: indianred;">Object</span>
 
 ```js
-typeof {name: "Anne", age: 34, height: 170} // object
+typeof {name: "Anne", age: 34, height: 170} // "object"
 ```
 
 ---
 
 ### How to create an Object
 
-Here is the age of Anne:
+This is the age of Anne:
 
 ```js
 34
 ```
 
-And here is how we create an <span style="color: cadetblue;">object</span> holding Anne’s age:
+This is how we create an <span style="color: cadetblue;">object</span> holding Anne’s age:
 
 ```js
 {age: 34}
@@ -177,7 +179,7 @@ And here is how we create an <span style="color: cadetblue;">object</span> holdi
 
 ### Assign to a variable
 
-And here is how we <span style="color: cadetblue;">assign an object to a variable</span>:
+This is how we <span style="color: cadetblue;">assign an object to a variable</span>:
 
 ```js
 let anne = {age: 34};
@@ -187,7 +189,7 @@ let anne = {age: 34};
 
 ### Read a property’s value
 
-Here is how we <span style="color: cadetblue;">read the value of a property from the object</span>:
+This is how we <span style="color: cadetblue;">read the value of a property from the object</span>:
 
 ```js
 anne.age
@@ -199,7 +201,7 @@ If a property does not exist in the object, then we get <span style="color: indi
 
 ### Change property’s value
 
-Here is how we <span style="color: cadetblue;">change the value stored in anne.age</span>:
+This is how we <span style="color: cadetblue;">change the value stored in anne.age</span>:
 
 ```js
 anne.age = 35;
@@ -209,7 +211,7 @@ anne.age = 35;
 
 ### Object data type
 
-When working with Object data type, the order of the properties does not matter
+When working with the Object data type, the order of the properties does not matter
 
 ```js
 {name: "Anne", age: 34, height: 170}
@@ -219,10 +221,12 @@ When working with Object data type, the order of the properties does not matter
 
 ---
 
-When working with Object data type, the property names must be unique
+When working with the Object data type, property names must be unique
 
 ```js
-{name: "Anne", age: 34, height: 170}
+{name: "Anne", age: 34, height: 170} // correct
+{name: "Anne", name: "Annie", height: 170} // wrong
+
 ```
 
 ---
@@ -241,13 +245,14 @@ console.log("me and meAgain are not the same", anne !== anneAgain);
 
 ---
 
-There is only one instance from each basic data type
+There is only one instance for each basic data type value
 
 ```js
 let name = "Anne";
 let nameAgain = "Anne";
 
-console.log(name and nameAgain are the same", name === nameAgain);
+console.log("name and nameAgain are the same", 
+            name === nameAgain);
 // true
 ```
 
@@ -270,13 +275,14 @@ A property's value can also be a function
 
 ### this keyword
 
-Inside the greet function, we used this keyword which is a variable we use whenever we need to refer back to the object we are working with. So the following is always true .
+Inside the greet function, we used `this`, which is a variable we use whenever we need to refer back to the object we are working with. The following is always true .
 
 ```js
 let me = {
     name: "Jane", 
     greet: function() {
         console.log("This is true all the time", this === me);
+        // true
     }
 }
 ```
@@ -299,7 +305,7 @@ Assign your object to a variable called `me`
 
 ### Exercise 2
 
-Now interview your classmate to collect his/her/their data
+Now interview your classmate to collect their data
 
 ```js
 name, age, favouriteFood, hobbies, favouriteMusic, isStudent
