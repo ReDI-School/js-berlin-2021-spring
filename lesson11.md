@@ -127,7 +127,7 @@ Bonus: Use the function from exercise 1 to age the younger person until they are
 
 ### Exercise 3
 
-Create a function `determineOlderPerson` that takes two person objects and prints who is the old person of the two, and by how many years difference.
+Create a function `determineOlderPerson` that takes two person objects and prints who is the older person of the two, and the age difference between them.
 
 ```js
 let person1 = {
