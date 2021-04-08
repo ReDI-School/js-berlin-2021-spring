@@ -141,3 +141,35 @@ let person2 = {
 determineOlderPerson(person1, person2);
 // -> "Anne is 5 years older than Owen"
 ```
+
+---
+
+### Homework (part 1 of 2)
+
+Create an object to represent a car. It should have the following properties: `model`, `engineIsWorking`, `wheelCount`, and a method `canBeDriven`. `canBeDriven` returns true if `engineIsWorking` and `wheelCount` is 4.
+
+```js
+let myCar = {
+    // Your code here!
+};
+console.log(myCar.model); // -> "VW Golf"
+console.log(myCar.canBeDriven()); // -> true
+```
+Then, try to break your car:
+
+```js
+myCar.wheelCount -= 2;
+console.log(myCar.canBeDriven()); // -> false
+```
+
+---
+
+### Homework (part 2)
+
+Now that you have a broken car, create a function `serviceCar` to service your car, and ensure that it is working again:
+
+```js
+console.log(myCar.canBeDriven()); // -> false
+serviceCar(myCar);
+console.log(myCar.canBeDriven()); // -> true
+```
