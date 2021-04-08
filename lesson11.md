@@ -104,7 +104,7 @@ Create the function `celebrateBirthday`, which takes a `person` object, prints a
 ```js
 celebrateBirthday(person);
 // -> "Happy birthday! Anne is now 35!
-console.log(person.birthday); // -> 35
+console.log(person.age); // -> 35
 ```
 
 ---
