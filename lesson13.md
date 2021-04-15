@@ -393,7 +393,7 @@ nameElement.textContent = newName;
 
 ---
 
-### Let's practice
+### Exercise 1: 
 
 Create a HTML page with a button element:
 
@@ -411,3 +411,24 @@ myButtonElement.disabled = true;
 ```
 
 Bonus: Can you also set the background color of your button?
+
+---
+
+### Exercise 2:
+
+Color Scheme Selector
+
+Follow the instructions inside the `main.js` file to create 2 buttons that change the color scheme of the page.
+
+Bonus: create an extra button that sets a new color scheme with your choice of colors
+
+---
+
+### Exercise 3:
+
+- open a favourite website of yours and look for an example of something on that page that might be represented by a JavaScript object.
+- create a JavaScript object to represent that
+
+For example: https://www.goodreads.com/ is a website that I use for tracking books I've read and that I want to read. An individual book from there can be easily represented by an object. 
+
+---
