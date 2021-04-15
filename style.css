@@ -39,3 +39,8 @@ pre > code.hljs {
   color: inherit;
 }
 
+
+.reveal .center-img {
+    display: block;
+    margin: auto;
+}
