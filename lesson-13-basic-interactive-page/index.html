@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 32px;
+      }
+
+      #myContent {
+        margin-bottom: 64px;
+      }
+
+
+      label, input {
+        display: block;
+      }
+
+      .form > div {
+        margin-bottom: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myContent">
+      <h1>Hello class!</h1>
+      <p>My name is <span id="myName">Carlo</span></p>
+    </div>
+
+    <div class="form">
+      <div>
+        <label for="myInput">Page background color</label>
+        <input type="text" id="pageBackgroundInput" value="red" />
+        <button onclick="changePageBackground()">Change</button>
+      </div>
+
+      <div>
+        <label for="">Content background color</label>
+        <input type="text" id="contentBackgroundInput" />
+        <button onclick="changeContentBackground()">Change</button>
+      </div>
+
+      <div>
+        <label>New Name</label>
+        <input type="text" id="myNameInput" />
+        <button onclick="changeMyName()">Change</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
