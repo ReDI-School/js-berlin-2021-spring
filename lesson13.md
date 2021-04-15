@@ -395,7 +395,7 @@ nameElement.textContent = newName;
 
 ### Exercise 1: 
 
-Create a HTML page with a button element:
+Create an HTML page with a button element:
 
 ```html
 <body>
@@ -403,7 +403,7 @@ Create a HTML page with a button element:
 </body>
 ```
 
-Now try to set a HTML attribute from JavaScript:
+Now try to set an HTML attribute from JavaScript:
 
 ```js
 let myButtonElement = document.getElementById("myButton");
