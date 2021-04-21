@@ -21,7 +21,7 @@ HTML:
 
 Select the elements from JavaScript:
 ```js
-let myDivElement = document.getElementById("myDiv");s
+let myDivElement = document.getElementById("myDiv");
 let myInputElement = document.getElementById("myInput");
 let myButtonElement = document.getElementById("myButton");
 ```
@@ -76,7 +76,7 @@ Same from JavaScript:
 let myInputElement = document.getElementById("myInput");
 myInputElement.type = "number";
 myInputElement.min = 0;
-myInputElement.min = 10;
+myInputElement.max = 10;
 myInputElement.placeholder = "Enter a number";
 ```
 
