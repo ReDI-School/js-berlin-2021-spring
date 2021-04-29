@@ -39,9 +39,9 @@ Let's say I want to bake a cake:
 <div>
 Cake recipe:<br>
 
-- 2 eggs
-- 100g sugar
-- 175g flour
+- 6 eggs
+- 3 cups of sugar
+- 5 cups of flour
 - etc.
 </div>
 </div>
@@ -50,9 +50,9 @@ Cake recipe:<br>
 
 ### Loops: cake recipe 
 
-We put an empty bowl on a scale and we keep our ingredients ready.
+We take an empty bowl and keep our ingredients ready.
 
-We need 175g of flour. 
+We need 5 cups of flour. 
 
 1. What's the action that we need to repeat?
 1. For how long do we need to repeat it?
@@ -61,8 +61,8 @@ We need 175g of flour.
 
 ### Loops: cake recipe 
 
-1. The action we need to repeat is adding flour to the bowl
-1. We repeat it as long as the flour in the bowl weights less than 175g
+1. The action we need to repeat is adding a cup of flour to the bowl
+1. We repeat it 5 times 
 
 ---
 
@@ -70,10 +70,10 @@ We need 175g of flour.
 
 We can distinguish different parts in a loop:
 
-- a starting point (initialization) 
-- a condition
-- a value that changes to make the condition `false` (update)
-- an action to repeat
+- initialization: a starting point
+- condition: a test to see if the loop should stop
+- update: changes the value checked by the condition
+- action: what we want to repeat
 
 It's important that the condition is `false` at some point, otherwise the loop will go on indefinitely.
 
@@ -81,9 +81,9 @@ It's important that the condition is `false` at some point, otherwise the loop w
 
 ### Loops: cake recipe
 
-- initialization: no flour in the bowl (0g of flour)
-- condition: is the flour weight less than 175g? (flour < 175)
-- update: amount of flour in the bowl (flour++)
+- initialization: no flour in the bowl (cupsOfFlour = 0)
+- condition: did we put less than 5 cups of flour? (cupsOfFlour < 5)
+- update: cups of flour in the bowl (cupsOfFlour++)
 - action: add flour to the bowl
 
 ---
@@ -330,6 +330,29 @@ console.log(sum);
 - the block is executed as long as certain condition is true
 - we normally need a starting point, initializing some variable
 - inside the block that is repeated, we usually update some value to make sure that the loop can stop
+
+---
+
+### Loops and the DOM
+
+Can we actually use loops when interacting with the DOM?
+
+Let's see an example.
+
+---
+
+### Homework 1
+
+1. create a number input and a button
+1. when clicking a button, run a function that reads the value from the input
+1. inside the function, calculate the sum of the numbers between 0 and this number
+1. display the sum on the page
+
+---
+
+### Homework 2
+
+Modify the box generator code so that the number of boxes to display is taken from an input on the page
 
 ---
 
