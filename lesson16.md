@@ -352,9 +352,11 @@ Let's see an example.
 
 ### Homework 2
 
-Modify the box generator code so that the number of boxes to display is taken from an input on the page
+[Box generator](https://github.com/ReDI-School/js-berlin-2021-spring/tree/main/lesson-16-examples/box-generator)
 
-Bonus
+Modify the box generator code so that the number of boxes to display is taken from an input on the page.
+
+Bonus: add other inputs to also change color and sizes of the boxes.
 
 ---
 
