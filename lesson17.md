@@ -70,23 +70,6 @@ and, if it is `true`, executes the body. After every loop, it executes the **upd
 
 ---
 
-### For loop - summary
-
-* A `while` loop
- 1. **Test** the **condition**
-  * If the test returns `false`, exit the loop
-  * If the test returns `true`, execute the loop body
-   * *Loop* back to **test** step 
-* A `for` loop
- 1. **Initialize** the counter
- 1. **Test** the **condition**
-  * If the test returns `false`, exit the loop
-  * If the test returns `true`, execute the loop body
-  * After executing the body, run the **update**
-    * *Loop* back to **test** step 
-
----
-
 ### For vs. while
 
 * We use a `for` loop if we know in advance how often it will be executed.
@@ -114,20 +97,6 @@ This time, with a `for` loop!
 * Output the squares of the first 10 numbers starting with 1 (1, 4, 9, 16, ...)
 * Output the sum of the first 10 numbers starting with 1
 * Count down from 10 to 0 and output it on console.
-
----
-
-### Exercises
-
-* Draw a pyramid to console:
-
-```
-*
-**
-***
-****
-*****
-```
 
 ---
 
@@ -162,7 +131,7 @@ Print all even numbers between 0 and 100
 
 ---
 
-### Homework
+### Bonus Exercise (Challenge!)
 
 This is a real interview question for a Junior JavaScript developer:
 
@@ -171,3 +140,16 @@ This is a real interview question for a Junior JavaScript developer:
   * If the number is divisible by 5 (and not by 3), print “Buzz” instead
   * If the number is divisible by both 3 and 5, print “FizzBuzz” instead
 
+---
+
+### Homework
+
+* Draw a pyramid to console:
+
+```
+*
+**
+***
+****
+*****
+```
