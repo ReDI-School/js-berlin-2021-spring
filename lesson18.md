@@ -33,7 +33,7 @@ while (isHungry) {
 let name = "Owen";
 
 // number
-let age = 28;
+let age = 29;
 
 // boolean
 let isProgrammer = true;
@@ -186,7 +186,7 @@ console.log(friends[3]); // undefined
 ```
 <!-- .element: class="fragment" -->
 
-
+---
 
 ### Exercise 1
 
@@ -201,7 +201,10 @@ hello Carol
 
 ---
 
-### Solution
+### Exercise 1: solution
+
+Available later
+<!--
 
 ```js
 let friends = ["Sevtap", "Carlo", "Abdullah"];
@@ -209,6 +212,8 @@ console.log("hello " + friends[0]);
 console.log("hello " + friends[1]);
 console.log("hello " + friends[2]);
 ```
+
+-->
 
 ---
 
@@ -277,6 +282,23 @@ hello Carol
 
 ---
 
+### Exercise 2: solution
+
+Available later
+<!--
+
+```js
+let friends = ["Alice", "Bob", "Carol"];
+
+for (let i = 0; i < friends.length; i++) {
+    console.log("Hello " + friends[i]);
+}
+```
+
+-->
+
+---
+
 ### Appending new values
 
 We can append new values to an array using `.push()`:
@@ -305,10 +327,12 @@ Create a function that takes an array and outputs the following:
 Create an array containing a few numbers, ex `[3, 2, 9, 5, 6]` and test your code:
 
 ```js
+let numbers = [3, 2, 9, 5, 6]; 
+
 function exercise3(array) {
     // your code here
 }
-exercise3([3, 2, 9, 5, 6]);
+exercise3(numbers);
 ```
 
 <!-- .slide: style="font-size:70%" -->
@@ -324,8 +348,10 @@ exercise3([3, 2, 9, 5, 6]);
 
 ---
 
-### Solution
+### Exercise 3: Solution
 
+Available later
+<!--
 ```js
 function exercise3(array) {
     console.log("last element: " + array[array.length - 1]);
@@ -345,12 +371,18 @@ function exercise3(array) {
 }
 exercise3([3, 2, 9, 5, 6]);
 ```
+
+--->
+
 <!-- .slide: style="font-size:70%" -->
 
 ---
 
 ### Solution Bonus 1
 
+Available later
+
+<!--
 ```js
 function lessThan5(arr) {
   let result = [];
@@ -366,7 +398,8 @@ let result = lessThan5([1, 3, 7, 2, 9, 5]);
 console.log(result);
 ```
 
----
+
+
 
 ### Solution Bonus 2
 
@@ -383,3 +416,5 @@ function find(num, arr) {
 console.log(find(5, [2, 1, 5, 6, 3]));
 console.log(find(42, [2, 1, 5, 6, 3]));
 ```
+
+-->
