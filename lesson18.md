@@ -2,7 +2,7 @@
 
 # Basic Frontend - Spring 2021
 
-Lesson 18, Tuesday, 2021-05-04
+Lesson 18, Tuesday, 2021-05-06
 
 ---
 
@@ -329,10 +329,15 @@ Create an array containing a few numbers, ex `[3, 2, 9, 5, 6]` and test your cod
 ```js
 let numbers = [3, 2, 9, 5, 6]; 
 
-function exercise3(array) {
+function lastElement(array) {
     // your code here
 }
-exercise3(numbers);
+// write also the other functions listed below
+
+lastElement(numbers);
+sum(numbers);
+largestNumber(numbers);
+average(numbers);
 ```
 
 <!-- .slide: style="font-size:70%" -->
