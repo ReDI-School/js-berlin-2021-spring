@@ -76,7 +76,7 @@ let todoListElement = document.getElementById("todoList");
 let children = todoListElement.children;
 for (let i = 0; i < children.length; i++) {
   let child = children[i];
-  console.log(child[i]);
+  console.log(child);
 }
 ```
 
