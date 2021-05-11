@@ -97,7 +97,7 @@ will be strike-through.
 
 ### Second assignment
 
-You're working as a frontend engineer in a company. The backend people team just
+You're working as a frontend engineer in a company. The backend team just
 finished their code to get the products for your web shop from the database. An example
 object looks like this:
 
