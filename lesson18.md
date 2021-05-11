@@ -402,11 +402,13 @@ function lessThan5(arr) {
 let result = lessThan5([1, 3, 7, 2, 9, 5]);
 console.log(result);
 ```
+-->
 
-
-
+---
 
 ### Solution Bonus 2
+
+<!--
 
 ```js
 function find(num, arr) {
