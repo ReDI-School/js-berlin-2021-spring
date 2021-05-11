@@ -203,17 +203,12 @@ hello Carol
 
 ### Exercise 1: solution
 
-Available later
-<!--
-
 ```js
 let friends = ["Sevtap", "Carlo", "Abdullah"];
 console.log("hello " + friends[0]);
 console.log("hello " + friends[1]);
 console.log("hello " + friends[2]);
 ```
-
--->
 
 ---
 
@@ -284,8 +279,6 @@ hello Carol
 
 ### Exercise 2: solution
 
-Available later
-<!--
 
 ```js
 let friends = ["Alice", "Bob", "Carol"];
@@ -294,8 +287,6 @@ for (let i = 0; i < friends.length; i++) {
     console.log("Hello " + friends[i]);
 }
 ```
-
--->
 
 ---
 
@@ -355,39 +346,84 @@ average(numbers);
 
 ### Exercise 3: Solution
 
-Available later
-<!--
+Output the last element of the array
+
 ```js
-function exercise3(array) {
-    console.log("last element: " + array[array.length - 1]);
+let numbers = [3, 2, 9, 5, 6]; 
+
+function lastElement(numbers) {
+    return numbers[array.length - 1];
+}
+
+console.log("Last element: " + lastElement(numbers));
+```
+
+---
+
+### Exercise 3: Solution
+
+Output the sum of all the numbers in the array
+
+```js
+let numbers = [3, 2, 9, 5, 6]; 
+
+function sum(numbers) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
         sum += array[i];
     }
-    console.log("sum: " + sum);
+    return sum;
+}
+
+console.log("Sum: " + sum(numbers));
+
+```
+
+---
+
+### Exercise 3: Solution
+
+Output the largest number of the array
+
+```js
+let numbers = [3, 2, 9, 5, 6]; 
+
+function largestNumber(numbers) {
     let largest = array[0];
     for (let i = 1; i < array.length; i++) {
         if (array[i] > largest) {
             largest = array[i];
         }
     }
-    console.log("largest number: " + largest);
-    console.log("mean: " + sum / array.length);
+    return largest;
 }
-exercise3([3, 2, 9, 5, 6]);
+
+console.log("Largest number: " + largestNumber(numbers));
 ```
 
---->
+---
 
-<!-- .slide: style="font-size:70%" -->
+### Exercise 3: Solution
+
+Output the average (mean) of all numbers (sum of all numbers divided by amount of numbers)
+
+```js
+
+let numbers = [3, 2, 9, 5, 6]; 
+function average(numbers) {
+    let sum = sum(numbers); // sum() is the function we created before
+    let average = sum / numbers.length;
+    return average;
+}
+
+console.log("Average: " + average(numbers));
+
+```
 
 ---
 
 ### Solution Bonus 1
 
-Available later
-
-<!--
 ```js
 function lessThan5(arr) {
   let result = [];
@@ -402,13 +438,11 @@ function lessThan5(arr) {
 let result = lessThan5([1, 3, 7, 2, 9, 5]);
 console.log(result);
 ```
--->
 
 ---
 
 ### Solution Bonus 2
 
-<!--
 
 ```js
 function find(num, arr) {
@@ -423,5 +457,3 @@ function find(num, arr) {
 console.log(find(5, [2, 1, 5, 6, 3]));
 console.log(find(42, [2, 1, 5, 6, 3]));
 ```
-
--->
