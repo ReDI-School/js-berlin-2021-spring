@@ -88,9 +88,9 @@ With the Rest Countries API we can pass a `fields` key to limit the number of fi
 
 ### Filtering countries result
 
-https://restcountries.eu/rest/v2/all?fields=name;capital;currencies
+- https://restcountries.eu/rest/v2/all?fields=name;capital;currencies
 
-https://restcountries.eu/rest/v2/name/germany?fields=name;capital;currencies;languages
+- https://restcountries.eu/rest/v2/name/germany?fields=name;capital;currencies;languages
 
 
 ---
@@ -206,3 +206,6 @@ https://opentdb.com/api_config.php
 1. add a button to load a new question
 
 Bonus: display the answers in a random order on the page
+
+
+<!-- .slide: id="lesson1" style="font-size: 90%" -->
