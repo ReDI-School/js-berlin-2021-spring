@@ -208,4 +208,4 @@ https://opentdb.com/api_config.php
 Bonus: display the answers in a random order on the page
 
 
-<!-- .slide: id="lesson1" style="font-size: 90%" -->
+<!-- .slide: style="font-size: 90%" -->
