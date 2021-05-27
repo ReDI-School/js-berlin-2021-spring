@@ -119,7 +119,7 @@ However, scripts can also be remote addresses. In the example below, we load the
   <body>
     <div id="myGraph"></div>
     <script>
-      const dataSet1 = {
+      let dataSet1 = {
         x: [1,  2, 3,  4],
         y: [0, 12, 8, 17],
         type: 'scatter'
